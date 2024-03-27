@@ -1,11 +1,9 @@
-import GladGame from "./GladiatorGame/GladGame";
-import NanthuMCQ from "./components/NanthuMCQ";
+import Homepage from "./pages/Homepage";
 
 export default function App() {
   return (
     <>
-      <div className=" h-[65vh] bg-red-400"></div>
-      <NanthuMCQ />
+      <Homepage />
     </>
   );
 }
