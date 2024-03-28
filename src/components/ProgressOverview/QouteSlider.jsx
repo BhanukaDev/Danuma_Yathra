@@ -67,10 +67,10 @@ export default function QouteSlider() {
         >
           {quotes.secondaries.map((quote, index) => (
             <div key={index} className="py-10 px-10">
-              <h2 className=" text-red-500 font-fredoka text-6xl font-medium">
+              <h2 className=" text-red-500 font-fredoka text-4xl md:text-6xl font-medium">
                 {quotes.primary}
               </h2>
-              <p className="text-gray-800 mt-6 font-fredoka text-2xl">
+              <p className="text-gray-800 mt-6 font-fredoka text-2xl md:text-3xl">
                 {quote}
               </p>
             </div>

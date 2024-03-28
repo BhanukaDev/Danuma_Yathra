@@ -13,8 +13,8 @@ export default function Homepage() {
       <HomeCarousel />
       <Container className="flex flex-col mt-4 px-4" role="region">
         <ProgramOverview />
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 }

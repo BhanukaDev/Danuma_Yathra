@@ -2,23 +2,20 @@ import { FaHeart } from "react-icons/fa6";
 
 export default function Banner1() {
   return (
-    <div className="w-full h-[85vh] md:h-auto md:aspect-[17/8] bg-black flex flex-col md:flex-row ">
+    <div className="flex h-[85vh] w-full flex-col bg-black md:aspect-[17/8] md:h-auto md:flex-row ">
       <img
-        src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://plus.unsplash.com/premium_photo-1682088221071-ddd6d6de4191?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Main Carousel Image 1"
         aria-label="Main Carousel Image 1"
-        className="object-cover object-center h-[65%] md:h-full md:w-[60%]"
+        className="h-[65%] object-cover object-center md:h-full md:w-[60%]"
       />
-      <div className="flex relative bottom-8 md:bottom-0 grow flex-col md:w-[40%] bg-black justify-center items-center md:items-start gap-4 px-4">
-        <div className=" absolute md:h-full w-full h-[40px] md:w-[20%] bottom-[100%] md:bottom-0 md:right-[100%] md:bg-gradient-to-l bg-gradient-to-t from-black to-transparent"></div>
-        <p className="text-white text-lg text-center md:text-left font-fredoka font-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          dignissimos totam nemo. Facere laudantium id quaerat unde. Voluptate
-          nam explicabo saepe quod? Animi, pariatur maxime autem commodi
-          mollitia fugiat quo! Lorem ipsum dolor sit amet consectetur maxime
-          autem commodi mollitia fugiat quo!
+      <div className="relative bottom-8 flex grow flex-col items-center justify-center gap-4 bg-black px-4 md:bottom-0 md:w-[40%] md:items-start">
+        <div className=" absolute bottom-[100%] h-[40px] w-full bg-gradient-to-t from-black to-transparent md:bottom-0 md:right-[100%] md:h-full md:w-[20%] md:bg-gradient-to-l"></div>
+        <p className="text-center font-fredoka text-xl font-medium text-white md:text-left">
+          100+ volunteers are ensuring that every child gets the education they
+          deserve. Join us in our mission to make the world a better place.
         </p>
-        <button className="md:mt-6 text-white bg-red-500 hover:bg-red-800 font-medium font-lexend rounded-full text-sm px-4 py-2 text-center flex items-center gap-2">
+        <button className="flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-center font-lexend text-sm font-medium text-white hover:bg-red-800 md:mt-6">
           <FaHeart className="text-white" />
           I&#39;d love to volunteer!
         </button>
