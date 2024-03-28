@@ -16,15 +16,18 @@ export default function QouteSlider() {
 
   const sliderRef = useRef(null);
   return (
-    <div role="region" className="py-0 bg-gray-200 flex w-full mt-10 mb-20">
-      <div className=" aspect-[4/3] w-[45%]">
+    <div
+      role="region"
+      className="py-0 bg-gray-200 flex flex-col sm:flex-row w-full rounded-lg overflow-hidden mt-10 mb-20"
+    >
+      <div className=" aspect-[4/3] w-full sm:w-[45%]">
         <img
           src="https://images.unsplash.com/photo-1698993026848-f67c1eb7f989?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Kid Studying"
           className="object-cover object-center h-full w-full"
         />
       </div>
-      <div className=" relative w-[55%]">
+      <div className=" relative w-full sm:w-[55%]">
         <FaAngleLeft
           onClick={() => {
             if (sliderRef.current) sliderRef.current.slickPrev();
