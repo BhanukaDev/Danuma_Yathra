@@ -20,26 +20,35 @@ export default function HomeCarousel() {
     },
   ];
   return (
-    <Slider
-      infinite={true}
-      slidesToShow={1}
-      slidesToScroll={1}
-      autoplay
-      autoplaySpeed={5000}
-      speed={1000}
-      lazyLoad="ondemand"
-      arrows={false}
-      dots={false}
-      className=" bg-black"
-    >
-      {imgs.map((img, index) => (
-        <img
-          key={index}
-          src={img.src}
-          alt={img.alt}
-          className="aspect-video object-cover object-center"
-        />
-      ))}
-    </Slider>
+    <div className=" relative">
+      <Slider
+        infinite={true}
+        slidesToShow={1}
+        slidesToScroll={1}
+        autoplay
+        autoplaySpeed={3000}
+        speed={1000}
+        lazyLoad="ondemand"
+        arrows={false}
+        dots={false}
+      >
+        {imgs.map((img, index) => (
+          //   <img
+          //     key={index}
+          //     src={img.src}
+          //     alt={img.alt}
+          //     loading="lazy"
+          //     className=" aspect-video object-cover object-center"
+          //   />
+          <div key={index} className="aspect-[17/8] bg-red-400">
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="object-cover object-center h-full w-full"
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }

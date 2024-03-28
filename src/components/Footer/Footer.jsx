@@ -4,7 +4,7 @@ export default function Footer() {
       title: "Help And Support",
       links: [
         { name: "Contact Us", path: "#" },
-        { name: "Work with us", path: "#" },
+        { name: "Join Our Team", path: "#" },
         { name: "Ideas & Suggestions", path: "#" },
       ],
     },
