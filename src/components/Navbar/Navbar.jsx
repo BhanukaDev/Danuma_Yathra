@@ -9,9 +9,9 @@ export default function Navbar() {
       name: "Who we are",
       path: "/who-we-are",
     },
+    { name: "Toutorial", path: "/tutorials" },
     { name: "Gallery", path: "/gallery" },
     { name: "Events", path: "/events" },
-    { name: "Tools", path: "/tools" },
   ];
 
   return (

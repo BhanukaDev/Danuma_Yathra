@@ -4,7 +4,7 @@ export default function Whatwedo() {
   return (
     <div role="region" className="flex flex-col md:flex-row gap-10 py-16">
       <div
-        className="relative md:order-2  w-[80%] mx-auto flex justify-center items-center"
+        className="relative md:order-2 cursor-pointer  w-[80%] mx-auto flex justify-center items-center"
         style={{
           flex: "2",
         }}
@@ -37,7 +37,7 @@ export default function Whatwedo() {
         </p>
         <button className="mt-6 text-white bg-red-500 hover:bg-red-800 font-medium font-lexend rounded-full text-sm px-4 py-2 text-center flex items-center gap-2">
           <FaHeart className="text-white" />
-          I&#39; love to volunteer!
+          I&#39;d love to volunteer!
         </button>
       </div>
     </div>

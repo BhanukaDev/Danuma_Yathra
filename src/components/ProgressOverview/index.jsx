@@ -1,4 +1,5 @@
 import ImpactMetrics from "./ImpactMetrics";
+import QouteSlider from "./QouteSlider";
 import Whatwedo from "./Whatwedo";
 
 export default function ProgramOverview() {
@@ -6,6 +7,7 @@ export default function ProgramOverview() {
     <>
       <Whatwedo />
       <ImpactMetrics />
+      <QouteSlider />
     </>
   );
 }

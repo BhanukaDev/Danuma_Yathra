@@ -33,17 +33,15 @@ export default function HomeCarousel() {
         dots={false}
       >
         {imgs.map((img, index) => (
-          //   <img
-          //     key={index}
-          //     src={img.src}
-          //     alt={img.alt}
-          //     loading="lazy"
-          //     className=" aspect-video object-cover object-center"
-          //   />
-          <div key={index} className="aspect-[17/8] bg-red-400">
+          <div
+            key={index}
+            role="region"
+            className="aspect-[17/8] bg-red-400  outline-none"
+          >
             <img
               src={img.src}
               alt={img.alt}
+              aria-label={img.alt}
               className="object-cover object-center h-full w-full"
             />
           </div>
