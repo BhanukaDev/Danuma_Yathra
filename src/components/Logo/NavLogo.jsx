@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
 import myImage from "/danumalogo.png";
+import { navLinks } from "../../navLinks";
 
 export default function NavLogo() {
   return (
-    <a className=" cursor-pointer inline-flex items-center gap-3 font-bold text-black">
+    <Link
+      to={navLinks.home.path}
+      className=" cursor-pointer inline-flex items-center gap-3 font-bold text-black"
+    >
       <img
         src={myImage}
         alt="Danuma Yathra Logo"
@@ -11,6 +16,6 @@ export default function NavLogo() {
       <span className=" hidden sm:block font-serifSinhala text-2xl">
         දැනුම යාත්‍රා
       </span>
-    </a>
+    </Link>
   );
 }

@@ -11,12 +11,12 @@ export default function Footer() {
     {
       title: "Follow Us",
       links: [
-        { name: "Facebook", path: "#" },
-        { name: "Twitter/X", path: "#" },
-        { name: "Discord", path: "#" },
+        { name: "Facebook", path: "https://www.facebook.com/danumayaathra" },
+        { name: "Youtube", path: "https://www.youtube.com/@danumayaathra2197" },
+        { name: "LinkedIn", path: "#" },
         {
-          name: "LinkedIn",
-          path: "#",
+          name: "WhatsApp",
+          path: "https://chat.whatsapp.com/DKjITZv0OAPEQ99jx3jLbU",
         },
       ],
     },
@@ -42,7 +42,11 @@ export default function Footer() {
               <ul className="text-gray-500 font-medium ">
                 {sitemap.links.map((link, lindex) => (
                   <li key={lindex} className="mb-4">
-                    <a href={link.path} className=" hover:underline">
+                    <a
+                      href={link.path}
+                      target="_blank"
+                      className=" hover:underline"
+                    >
                       {link.name}
                     </a>
                   </li>

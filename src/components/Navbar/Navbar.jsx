@@ -2,6 +2,7 @@ import NavLogo from "../Logo/NavLogo";
 import { LuMenu } from "react-icons/lu";
 import { FaHeart } from "react-icons/fa6";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const routes = [
@@ -31,12 +32,12 @@ export default function Navbar() {
               <ul className="flex gap-4 p-4 md:p-0 mt-4 font-medium rounded-lg md:flex-row md:mt-0 md:border-0 ">
                 {routes.map((route) => (
                   <li key={route.path}>
-                    <a
-                      href="#"
+                    <Link
+                      to={route.path}
                       className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:hover:text-green-700 md:p-0"
                     >
                       {route.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
