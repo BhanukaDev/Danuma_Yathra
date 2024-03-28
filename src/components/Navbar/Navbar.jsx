@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import NavLogo from "../Logo/NavLogo";
 import { LuMenu } from "react-icons/lu";
 import { FaHeart } from "react-icons/fa6";
@@ -13,37 +13,9 @@ export default function Navbar() {
     { name: "Contact", path: "/contact" },
   ];
 
-  const [fixed, setFixed] = useState(0);
-
-  useEffect(() => {
-    addEventListener("scroll", () => {
-      console.log(window.scrollY);
-      if (window.scrollY > 0) {
-        setFixed(true);
-      } else {
-        setFixed(false);
-      }
-    });
-
-    return () => {
-      removeEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          setFixed(true);
-        } else {
-          setFixed(false);
-        }
-      });
-    };
-  }, []);
-
   return (
     <Container
-      className={`w-full z-20 top-0 transition-all duration-500 ease-in-out ${
-        fixed ? "bg-white/80 shadow-md backdrop-blur" : ""
-      }`}
-      style={{
-        position: fixed ? "fixed" : "static",
-      }}
+      className={`w-full z-20 top-0 sticky transition-all duration-500 ease-in-out bg-white`}
     >
       <nav className="w-full border-b border-gray-200">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 sm:px-0">

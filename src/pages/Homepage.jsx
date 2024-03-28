@@ -8,9 +8,8 @@ export default function Homepage() {
   document.title = "Danuma Yathra";
 
   return (
-    <Container className=" h-screen flex flex-col" role="region">
+    <Container className=" h-screen w-screen flex flex-col" role="region">
       <Navbar />
-
       <HomeCarousel />
       <ProgramOverview />
       <Footer />

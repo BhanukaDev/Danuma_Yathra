@@ -28,6 +28,7 @@ export default function Footer() {
       ],
     },
   ];
+
   return (
     <footer className="bg-white dark:bg-gray-900 mt-auto">
       <div className="mx-auto w-full max-w-screen-xl">
@@ -52,11 +53,11 @@ export default function Footer() {
         </div>
         <div className="px-4 py-6 bg-gray-100 flex justify-center">
           <span className="text-sm  text-gray-500 text-center">
-            © 2023{" "}
+            &#169; {new Date().getFullYear()}{" "}
             <a href="/" className="font-serifSinhala">
-              දැනුම යාත්‍රා™
+              දැනුම යාත්‍රා
             </a>
-            . All Rights Reserved.
+            &#8482;. All Rights Reserved.
           </span>
         </div>
       </div>
