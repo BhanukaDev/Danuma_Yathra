@@ -47,7 +47,7 @@ export default function QouteSlider() {
               onClick={() => {
                 if (sliderRef.current) sliderRef.current.slickGoTo(index);
               }}
-              className={`w-4 h-2 ${
+              className={`w-4 h-1 ${
                 curIndex === index ? "bg-gray-600" : "bg-gray-400"
               } rounded-full inline-block cursor-pointer hover:bg-gray-500 transition-all duration-500 ease-in-out`}
             ></div>

@@ -9,11 +9,14 @@ export default function Footer() {
       ],
     },
     {
-      title: "Follow Us",
+      title: "Connect With Us",
       links: [
         { name: "Facebook", path: "https://www.facebook.com/danumayaathra" },
         { name: "Youtube", path: "https://www.youtube.com/@danumayaathra2197" },
-        { name: "LinkedIn", path: "#" },
+        {
+          name: "LinkedIn",
+          path: "https://www.linkedin.com/company/danuma-yathra/",
+        },
         {
           name: "WhatsApp",
           path: "https://chat.whatsapp.com/DKjITZv0OAPEQ99jx3jLbU",

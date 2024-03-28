@@ -45,9 +45,9 @@ export default function Navbar() {
             <div className="flex">
               <button
                 type="button"
-                className="text-white bg-green-700 hover:bg-green-800 font-medium font-lexend rounded-full text-sm px-4 py-2 text-center flex items-center gap-2"
+                className="md:text-white text-green-700 border border-green-700 md:bg-green-700 hover:bg-green-800 font-medium font-lexend rounded-full text-sm px-4 py-2 text-center flex items-center gap-2"
               >
-                <FaHeart className="text-white" />
+                <FaHeart />
                 Donate
               </button>
             </div>
