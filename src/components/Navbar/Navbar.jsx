@@ -5,11 +5,13 @@ import Container from "../Container";
 
 export default function Navbar() {
   const routes = [
+    {
+      name: "Who we are",
+      path: "/who-we-are",
+    },
     { name: "Gallery", path: "/gallery" },
     { name: "Events", path: "/events" },
     { name: "Tools", path: "/tools" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
   ];
 
   return (
