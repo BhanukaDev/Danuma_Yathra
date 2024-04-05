@@ -8,19 +8,25 @@ import Banner3 from "./Banner3";
 export default function HomeCarousel() {
   const sliderRef = useRef(null);
   const [curIndex, setCurIndex] = useState(0);
+
+  const banners = [
+    <Banner1 key={1} />,
+    <Banner2 key={2} />,
+    <Banner3 key={3} />,
+  ];
   return (
     <div className=" relative">
       <FaAngleLeft
         onClick={() => {
           if (sliderRef.current) sliderRef.current.slickPrev();
         }}
-        className="text-4xl z-10 cursor-pointer text-gray-500 absolute top-1/2 left-0 transform -translate-y-1/2"
+        className="absolute left-0 top-1/2 z-10 -translate-y-1/2 transform cursor-pointer text-4xl text-gray-500"
       />
       <FaAngleRight
         onClick={() => {
           if (sliderRef.current) sliderRef.current.slickNext();
         }}
-        className="text-4xl z-10 cursor-pointer text-gray-500 absolute top-1/2 right-0 transform -translate-y-1/2"
+        className="absolute right-0 top-1/2 z-10 -translate-y-1/2 transform cursor-pointer text-4xl text-gray-500"
       />
       <Slider
         infinite={true}
@@ -35,20 +41,18 @@ export default function HomeCarousel() {
         ref={sliderRef}
         afterChange={(index) => setCurIndex(index)}
       >
-        <Banner1 />
-        <Banner2 />
-        <Banner3 />
+        {banners}
       </Slider>
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-1">
-        {["", "", ""].map((quote, index) => (
+      <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 transform gap-1">
+        {banners.map((banner, index) => (
           <div
             key={index}
             onClick={() => {
               if (sliderRef.current) sliderRef.current.slickGoTo(index);
             }}
-            className={`w-4 h-1 ${
+            className={`h-1 w-4 ${
               curIndex === index ? "bg-gray-600" : "bg-gray-400"
-            } rounded-full inline-block cursor-pointer hover:bg-gray-500 transition-all duration-500 ease-in-out`}
+            } inline-block cursor-pointer rounded-full transition-all duration-500 ease-in-out hover:bg-gray-500`}
           ></div>
         ))}
       </div>

@@ -1,3 +1,4 @@
+import { navLinks } from "../../navLinks";
 import Container from "../Container";
 
 export default function Footer() {
@@ -5,47 +6,47 @@ export default function Footer() {
     {
       title: "Help And Support",
       links: [
-        { name: "Contact Us", path: "#" },
-        { name: "Join Our Team", path: "#" },
-        { name: "Ideas & Suggestions", path: "#" },
+        { name: "Contact Us", path: "/" },
+        { name: "Join Our Team", path: "/" },
+        { name: "Ideas & Suggestions", path: "/" },
       ],
     },
     {
       title: "Connect With Us",
       links: [
-        { name: "Facebook", path: "https://www.facebook.com/danumayaathra" },
-        { name: "Youtube", path: "https://www.youtube.com/@danumayaathra2197" },
+        { name: "Facebook", path: navLinks.facebook.path },
+        { name: "Youtube", path: navLinks.youtube.path },
         {
           name: "LinkedIn",
-          path: "https://www.linkedin.com/company/danuma-yathra/",
+          path: navLinks.linkedin.path,
         },
         {
           name: "WhatsApp",
-          path: "https://chat.whatsapp.com/DKjITZv0OAPEQ99jx3jLbU",
+          path: navLinks.whatsapp.path,
         },
       ],
     },
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", path: "#" },
-        { name: "Terms of Service", path: "#" },
+        { name: "Privacy Policy", path: "/" },
+        { name: "Terms of Service", path: "/" },
       ],
     },
   ];
 
   return (
-    <footer className="bg-white  mt-auto">
+    <footer className="mt-auto  bg-white">
       <Container>
         <div className="mx-auto w-full max-w-screen-xl">
-          <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 lg:py-8">
             {/* here */}
             {sitemaps.map((sitemap, sindex) => (
               <div key={sindex}>
-                <h2 className="mb-6 text-sm font-semibold font-lexend text-gray-900 uppercase">
+                <h2 className="mb-6 font-lexend text-sm font-semibold uppercase text-gray-900">
                   {sitemap.title}
                 </h2>
-                <ul className="text-gray-500 font-medium ">
+                <ul className="font-medium text-gray-500 ">
                   {sitemap.links.map((link, lindex) => (
                     <li key={lindex} className="mb-4">
                       <a
@@ -61,8 +62,8 @@ export default function Footer() {
               </div>
             ))}
           </div>
-          <div className="px-4 py-6 bg-gray-100 flex justify-center">
-            <span className="text-sm  text-gray-500 text-center">
+          <div className="flex justify-center bg-gray-100 px-4 py-6">
+            <span className="text-center  text-sm text-gray-500">
               &#169; {new Date().getFullYear()}{" "}
               <a href="/" className="font-serifSinhala">
                 දැනුම යාත්‍රා

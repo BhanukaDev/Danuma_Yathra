@@ -5,30 +5,31 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import logo from "/danumalogo.png";
+import { navLinks } from "../../navLinks";
 export default function Banner2() {
   const socialMedia = [
     {
       name: "Facebook",
-      url: "https://www.facebook.com/danumayaathra",
+      url: navLinks.facebook.path,
       icon: <FaFacebookF />,
       color: " bg-blue-800",
     },
     {
       name: "Youtube",
-      url: "https://www.youtube.com/@danumayaathra2197",
+      url: navLinks.youtube.path,
       icon: <FaYoutube />,
       color: " bg-red-800",
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/danuma-yathra/",
+      url: navLinks.linkedin.path,
 
       icon: <FaLinkedin />,
       color: " bg-blue-600",
     },
     {
       name: "WhatsApp",
-      url: "https://chat.whatsapp.com/DKjITZv0OAPEQ99jx3jLbU",
+      url: navLinks.whatsapp.path,
       icon: <FaWhatsapp />,
       color: " bg-green-800",
     },

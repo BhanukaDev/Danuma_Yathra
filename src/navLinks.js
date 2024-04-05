@@ -39,4 +39,20 @@ export const navLinks = {
     title: "Become a Volunteer",
     path: "/join",
   },
+  facebook: {
+    title: "Facebook",
+    path: "https://www.facebook.com/danumayaathra",
+  },
+  youtube: {
+    title: "Youtube",
+    path: "https://www.youtube.com/@danumayaathra2197",
+  },
+  linkedin: {
+    title: "LinkedIn",
+    path: "https://www.linkedin.com/company/danuma-yathra/",
+  },
+  whatsapp: {
+    title: "WhatsApp",
+    path: "https://chat.whatsapp.com/DKjITZv0OAPEQ99jx3jLbU",
+  },
 };
